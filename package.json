@@ -1,0 +1,14 @@
+{
+  "name": "x-raw-tool",
+  "version": "1.0.0",
+  "description": "fujifilm x raw studio 工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AlanNgaiJX",
+  "license": "ISC",
+  "dependencies": {
+    "alanngai-node-helper": "^1.0.0"
+  }
+}
