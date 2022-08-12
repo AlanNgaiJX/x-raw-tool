@@ -10,5 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "alanngai-node-helper": "^1.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@AlanNgaiJX.github.com:AlanNgaiJX/x-raw-tool.git"
   }
 }
