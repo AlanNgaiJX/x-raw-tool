@@ -1,10 +1,10 @@
 /* 计算图片大概是哪个配方 */
 const getExifFromRaf = require("./getExifFromRaf.js");
 const exif2SettingForm = require("./exif2SettingForm.js");
-const getRecipeBySettingForm = require("../getRecipeBySettingForm.js");
+const getRecipeBySettingForm = require("./getRecipeBySettingForm.js");
 
-async function getImageRecipe(recipeSettings, recipes, imagePath){
-  return new Promise((resolve, reject)=>{
+function getImageRecipe(recipeSettings, recipes, imagePath){
+  return new Promise(async (resolve, reject)=>{
     try {
       const exif = await getExifFromRaf(imagePath);
       const settingFormFromExif = exif2SettingForm(exif, recipeSettings);
@@ -20,6 +20,4 @@ async function getImageRecipe(recipeSettings, recipes, imagePath){
   })
 }
 
-module.exports = exports = {
-  getImageRecipe
-}
+module.exports = exports = getImageRecipe

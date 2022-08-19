@@ -1,6 +1,6 @@
 {
   "name": "x-raw-tool",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "fujifilm x raw studio 工具",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,8 @@
   "author": "AlanNgaiJX",
   "license": "ISC",
   "dependencies": {
-    "alanngai-node-helper": "^1.0.0"
+    "alanngai-node-helper": "^1.0.0",
+    "gm": "^1.23.1"
   },
   "devDependencies": {},
   "repository": {

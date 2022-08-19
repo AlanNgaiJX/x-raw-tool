@@ -4,18 +4,20 @@
 */
 const nodeHelper = require("alanngai-node-helper");
 
-let FROM = "";
-let TO = "";
+let FROM = "E:/c1workspace/2022.7.31-傍晚-同福西洲头咀公园/Capture";
+let ORIGIN = "E:/照片存档/fujifilm-2022.7.31-傍晚-同福西洲头咀公园";
+let TO = "E:/xrawWorkspace/2022.7.31-同福西洲头咀公园";
 
 (function main() {
   const processParams = nodeHelper.getProcessParams();
   if (processParams && processParams.length === 2) {
     FROM = processParams[0];
-    TO = processParams[1];
+    ORIGIN = processParams[1];
+    TO = processParams[2];
   }
 
   getAllRaf().forEach((fullFileName) => {
-    const _from = FROM + "/" + fullFileName;
+    const _from = ORIGIN + "/" + fullFileName;
     const _to = TO + "/" + fullFileName;
     nodeHelper.copyFile(_from, _to);
   });
