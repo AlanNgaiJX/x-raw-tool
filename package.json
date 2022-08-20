@@ -1,6 +1,6 @@
 {
   "name": "x-raw-tool",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "fujifilm x raw studio 工具",
   "main": "index.js",
   "scripts": {
