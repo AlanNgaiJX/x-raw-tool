@@ -12,7 +12,7 @@ function exif2SettingForm(exifData, recipeSettings) {
             break;
 
           case "include":
-            exifData[key].indexOf(val) > -1 &&
+            exifData[key] && exifData[key].indexOf(val) > -1 &&
               (settingForm[settingItem] = option.name);
             break;
           default:
