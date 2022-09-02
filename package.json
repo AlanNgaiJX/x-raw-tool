@@ -4,15 +4,22 @@
   "description": "fujifilm x raw studio 工具",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check-dep": "node ./check-dep.js",
+    "resizeImgOne": "node ./task/resize_img/resizeImgOne.js",
+    "resizeImgDir": "node ./task/resize_img/resizeImgDir.js",
+    "resizeImgRecipes": "node ./task/resize_img/resizeImgRecipes.js"
   },
   "author": "AlanNgaiJX",
   "license": "ISC",
   "dependencies": {
-    "alanngai-node-helper": "^1.0.0",
+    "alanngai-image-magick-tool": "^1.0.0",
+    "alanngai-node-helper": "^1.0.5",
     "gm": "^1.23.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "alanngai-update-notifier": "^1.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git@AlanNgaiJX.github.com:AlanNgaiJX/x-raw-tool.git"
