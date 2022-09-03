@@ -8,12 +8,15 @@
     "check-dep": "node ./check-dep.js",
     "resizeImgOne": "node ./task/resize_img/resizeImgOne.js",
     "resizeImgDir": "node ./task/resize_img/resizeImgDir.js",
-    "resizeImgRecipes": "node ./task/resize_img/resizeImgRecipes.js"
+    "resizeImgRecipes": "node ./task/resize_img/resizeImgRecipes.js",
+    "remarkImgOne": "node ./task/remark_img/remarkImgOne.js",
+    "remarkImgDir": "node ./task/remark_img/remarkImgDir.js",
+    "remarkImgRecipes": "node ./task/remark_img/remarkImgRecipes.js"
   },
   "author": "AlanNgaiJX",
   "license": "ISC",
   "dependencies": {
-    "alanngai-image-magick-tool": "^1.0.0",
+    "alanngai-image-magick-tool": "^1.0.1",
     "alanngai-node-helper": "^1.0.5",
     "gm": "^1.23.1"
   },
