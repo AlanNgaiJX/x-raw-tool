@@ -11,13 +11,14 @@
     "resizeImgRecipes": "node ./task/resize_img/resizeImgRecipes.js",
     "remarkImgOne": "node ./task/remark_img/remarkImgOne.js",
     "remarkImgDir": "node ./task/remark_img/remarkImgDir.js",
-    "remarkImgRecipes": "node ./task/remark_img/remarkImgRecipes.js"
+    "remarkImgRecipes": "node ./task/remark_img/remarkImgRecipes.js",
+    "resizeAndRemarkDir": "node ./task/resize_and_remark/resizeAndRemarkDir.js"
   },
   "author": "AlanNgaiJX",
   "license": "ISC",
   "dependencies": {
     "alanngai-image-magick-tool": "^1.0.1",
-    "alanngai-node-helper": "^1.0.5",
+    "alanngai-node-helper": "^1.0.6",
     "gm": "^1.23.1"
   },
   "devDependencies": {

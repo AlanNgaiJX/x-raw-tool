@@ -67,11 +67,13 @@ async function getParamsWithCheck() {
   } catch (e) {
     console.error(e);
   }
+  console.log("????????? ",SIZE_CONFIG);
 
   if (!SIZE_CONFIG) {
     throw new Error(`未输入 SIZE_CONFIG`);
   } else {
     if (!/^\d+,\d+$/.test(SIZE_CONFIG)) {
+      console.log("????????? ",SIZE_CONFIG);
       // 需为 l,s 格式
       throw new Error(`请输入正确的 SIZE_CONFIG，如 1080,720`);
     }
