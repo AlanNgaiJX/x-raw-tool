@@ -19,7 +19,7 @@ OUTPUT = nodeHelper.normalizePath(OUTPUT);
     .getAllFileNameFromDir(INPUT)
     .filter((name) => {
       const fileExt = nodeHelper.getFileExt(name);
-      return fileExt === "jpg" || fileExt === "png";
+      return fileExt === "jpg" || fileExt === "png" || fileExt === "JPG";
     })
     .map((name) => {
       return INPUT + "/" + name;
